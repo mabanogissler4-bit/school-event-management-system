@@ -1,0 +1,482 @@
+/* =========================================
+   STUDENT DASHBOARD
+   ========================================= */
+
+.student-dashboard {
+    min-height: 100vh;
+    background: #f6f7fb;
+    color: #1e1b4b;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.student-navbar {
+    width: 100%;
+    min-height: 76px;
+
+    background: linear-gradient(
+        135deg,
+        #312e81,
+        #4f46e5
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 32px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 15px rgba(49, 46, 129, 0.18);
+}
+
+
+/* =========================================
+   LOGO
+   ========================================= */
+
+.student-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.student-logo {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+.student-logo img {
+    width: 52px;
+    height: 52px;
+
+    object-fit: contain;
+
+    display: block;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   SYSTEM NAME
+   ========================================= */
+
+.student-brand-text {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.2;
+}
+
+
+.student-brand-text strong {
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+
+.student-brand-text span {
+    color: #ddd6fe;
+
+    font-size: 12px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   STUDENT ACCOUNT
+   ========================================= */
+
+.student-nav-user {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.student-avatar {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #4f46e5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    flex-shrink: 0;
+}
+
+
+.student-user-info {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.25;
+
+    min-width: 130px;
+}
+
+
+.student-user-info strong {
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.student-user-info span {
+    color: #ddd6fe;
+
+    font-size: 12px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   LOGOUT BUTTON
+   ========================================= */
+
+.student-logout {
+    border: none;
+
+    background: #ffffff;
+
+    color: #4f46e5;
+
+    padding: 9px 17px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.student-logout:hover {
+    background: #ede9fe;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.student-main {
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 35px 32px 50px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.student-welcome {
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #7c3aed
+    );
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    margin-bottom: 24px;
+
+    box-shadow:
+        0 8px 25px rgba(79, 70, 229, 0.18);
+}
+
+
+/* HERO LABEL */
+
+.student-welcome-label {
+    margin: 0 0 8px;
+
+    color: #ffffff !important;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* HERO TITLE */
+
+.student-welcome h1 {
+    margin: 0;
+
+    color: #ffffff !important;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* HERO DESCRIPTION */
+
+.student-welcome-description {
+    margin: 10px 0 0;
+
+    color: #f5f3ff !important;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   INFORMATION CARDS
+   ========================================= */
+
+.student-info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+.student-info-card {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    box-shadow:
+        0 3px 12px rgba(15, 23, 42, 0.05);
+}
+
+
+.student-info-icon {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 10px;
+
+    background: #ede9fe;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 19px;
+
+    flex-shrink: 0;
+}
+
+
+.student-info-card div:last-child {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.student-info-card span {
+    color: #64748b;
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+}
+
+
+.student-info-card strong {
+    color: #1e1b4b;
+
+    font-size: 14px;
+
+    word-break: break-word;
+}
+
+
+/* =========================================
+   EVENTS SECTION
+   ========================================= */
+
+.student-events-section {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 16px;
+
+    padding: 28px;
+
+    box-shadow:
+        0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+
+.student-section-header {
+    margin-bottom: 22px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+.student-section-label {
+    margin: 0 0 5px;
+
+    color: #4f46e5;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.student-section-header h2 {
+    margin: 0;
+
+    color: #1e1b4b;
+
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+
+.student-section-header p:last-child {
+    margin: 7px 0 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .student-navbar {
+        padding: 12px 18px;
+    }
+
+
+    .student-user-info {
+        display: none;
+    }
+
+
+    .student-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .student-main {
+        padding: 25px 18px 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .student-navbar {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 14px;
+    }
+
+
+    .student-brand {
+        justify-content: center;
+    }
+
+
+    .student-nav-user {
+        justify-content: center;
+    }
+
+
+    .student-welcome {
+        padding: 22px;
+    }
+
+
+    .student-welcome h1 {
+        font-size: 24px;
+    }
+
+
+    .student-events-section {
+        padding: 18px;
+    }
+}
